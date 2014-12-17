@@ -1,0 +1,362 @@
+html, body
+{
+    height: 100%;
+    font-family: "UniversNextMorningStarW04"
+}
+.content
+{
+    min-height: 100%;
+}
+
+sup{
+	font-size: 10px;
+	font-weight: 100;
+}
+
+header{
+	height: 54pt;
+}
+
+.video-section{
+	height: 170pt;
+	background-color: black
+}
+
+.video-tag{
+	position: absolute;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+}
+.video-overlay{
+	font-size: 20px;
+	font-weight: 100;
+	color: white;
+	z-index: 10;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
+	top: 25%;
+	line-height: 30px
+
+}
+
+.video-overlay div:last-child{
+	font-size: 16px;
+}
+
+.about-app{
+	height: 183pt;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	font-weight: 200;
+	padding-top: 30px;
+}
+
+.download-button{
+	padding-top: 7px;
+	background-color: red;
+	border-radius: 28px;
+	height: 40px;
+	vertical-align: top;
+	color: white;
+	font-weight: 200;
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.download {
+	font-weight: 700;
+	display: block;
+	color: #636363;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 15px 0px 15px 0px;
+}
+
+.btn {
+	padding: 6px 6px;
+	margin-right: 4px;
+}
+.btn-primary {
+	color: white;
+	border-radius: 28px;
+	background-color: red;
+	height: 40px;
+	border-color: #E04E23;
+	font-weight: 400;
+	width: 180px;
+	font-size: 16px;
+}	
+
+.download-links{
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+.download-links div {
+	float: left;
+	
+	background-color: red;
+	border-radius: 28px;
+	height: 35px;
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	padding: 0;
+	padding-top: 7px;
+	margin-right: 10px;
+
+}
+
+.dashboard{
+	padding-top: 20px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	height: 228pt;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.dashboard .title{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.title{
+	
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.info{	
+	font-size: 16px;
+	font-weight: 200;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.subcriber{
+	height: 406pt;
+	background-color: #ccc;
+}
+
+.subcriber .title{
+
+	padding-top: 40px;
+}
+.seprator{
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	margin-left: 30px;	
+	margin-right: 30px;
+	margin-top: 15px;
+}
+
+.sharing{
+	height: 300pt;
+	padding-top: 30px;
+}
+
+.sharing .appStore{
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.sharing div:first-child{
+	font-weight: 200;
+	font-size: 18px;
+}
+
+.sharing div:first-child, .sharing .share-links  {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.sharing span{
+	padding:5px;
+}
+
+.header-bar{
+	background-color: #f00;
+	height: 5px;
+}
+.logo{
+	padding-left: 5%;
+	padding-top: 10px;
+}
+.see-now{
+	height: 35px;
+	width: 35px;
+}
+.footer
+{
+    height: 50pt;
+}
+
+.footer ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 600;
+	color: #666;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+}
+
+.footer ul li { 
+	display: inline;
+	padding-right: 12px;
+ }
+
+.footer ul li a
+{
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #036;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.left-align{
+	text-align: left!important;
+}
+
+.carouselContainer {
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 25%;
+	height: 434pt;
+}
+.carousel-control.right {
+	right: -15%;	
+	background-image: none;
+}	
+.carousel-control.left {
+	left : -15%;
+	background-image: none;
+}
+.carousel-indicators .active {
+	background-color: #000;
+}	
+.carousel-indicators li {
+	background-color: #ccc;
+	border: 1px solid #ccc;
+}
+.block {
+	margin-top: 10px;
+}
+.activeBlock {
+	border-top:5px solid #636363;
+}
+
+
+@media (min-width: 992px) {
+	.video-section {
+		height: 470pt;
+		background-color: black;
+	}
+	
+	.about-app {
+		padding-top: 55pt;
+		height: 265pt;
+		border-bottom: none;
+		font-size: 20px;
+		font-weight: 300;
+	}
+	.sublink{
+		font-size: 16px;
+		
+	}	
+	.carousel {
+		height: 610pt;
+		background-color: red;
+		width:70%;
+	}
+	.dashboard {
+		height: 224pt;
+		border-bottom: none;
+	}	
+	.subcriber {
+		height: 520pt;
+	}
+	.sharing {
+		height: 350pt;
+	}
+	.pad_left {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.seprator {
+		width: 40%;
+		margin-left: 30%;
+	}
+	
+}
+@media (max-width: 767px) {
+	.activeBlock {
+		border-top: none;
+	}
+	.seprator {
+		width: 80%;
+		margin-left: 10%;
+	}
+}	
+/***********iPad***************/
+@media (max-width: 1199px) and (min-width: 992px) { 
+	.header {
+		height: 89pt;
+	}
+	.video-section {
+		height: 333pt;
+		background-color: black;
+	}
+	.carousel {
+		height: 434pt;
+		background-color: green;
+	}
+	.about-app {
+		height: 233pt;
+	}	
+	.dashboard {
+		height: 224pt;
+		border-bottom: none;
+	}	
+	.subcriber {
+		height: 520pt;
+	}
+	.sharing {
+		height: 345pt;
+	}
+	.block {
+		float: right;
+		margin-right: 15%;
+	}
+
+	.activeBlock {
+		border-top: none;
+	}
+	.pad_left {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.about-app {
+		border-bottom: none;
+	}
+}
