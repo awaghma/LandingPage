@@ -1,6 +1,7 @@
 html, body
 {
     height: 100%;
+    overflow-x: hidden; 
     font-family: "UniversNextMorningStarW04"
 }
 .content
@@ -8,21 +9,35 @@ html, body
     min-height: 100%;
 }
 
-sup{
-	font-size: 10px;
-	font-weight: 100;
-}
-
 header{
 	height: 51pt;
 	background-color: #fff;
 }
 
-.video-section{
-	height: 170pt;
-	background-color: black
+.header-bar{
+	background-color: #ed2224;
+	height: 3pt;
 }
 
+.logo{
+	padding-left: 15pt;
+	padding-top: 4pt;
+}
+
+.video-section{
+	position :relative;
+}
+video {
+	height: 100%;
+	position: absolute;
+}
+video, canvas {
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
 .video-tag{
 	position: absolute;
 	left: 0;
@@ -38,14 +53,8 @@ header{
 	text-align: center;
 	width: 100%;
 	left: 0;
-	top: 25%;
+	top: 5%;
 }
-
-.underline{
-	border-bottom: 1px solid #ee3d42;
-
-}
-
 .video-overlay div:last-child{
 	font-size: 12pt;
 	font-weight: 200;
@@ -54,30 +63,19 @@ header{
 }
 
 .about-app{
-	/*height: 183pt;*/
+
 	text-align: center;
 	font-size: 16pt;
 	font-weight: 200;
-	padding-top: 23pt;
+	padding-top: 30pt;
 }
 
 .about-app div:first-child{
 	
 	padding-bottom:21pt;
+	line-height: 21pt;
 }
 
-.download-button{
-	padding-top: 7px;
-	background-color: red;
-	border-radius: 28px;
-	height: 40px;
-	vertical-align: top;
-	color: white;
-	font-weight: 200;
-	margin-top: 30px;
-	margin-left: 60px;
-	margin-right: 60px;
-}
 .download {
 	font-weight: 700;
 	display: block;
@@ -96,12 +94,21 @@ header{
 .btn-primary {
 	color: #fff;
 	border-radius: 16pt;
-	background-color: red;
+	background-color: #ed2124;
+	border-color: red;
 	height: 32pt;
-	border-color: #ed2124;
 	font-weight: 300;
 	width: 139pt;
 	font-size: 16pt;
+}
+
+.w182pt{
+	width: 182pt!important;
+}
+
+.align-left{
+	text-align: left;
+	padding-left: 0;
 }	
 
 .download-links{
@@ -182,7 +189,7 @@ header{
 }
 
 .pad-top-54px{
-	padding-top: 54px;
+	padding-top: 54pt;
 }
 
 .seprator{
@@ -226,22 +233,9 @@ header{
 .sharing span{
 	padding-right:9pt;
 }
-
-.header-bar{
-	background-color: #ed2224;
-	height: 3pt;
-}
-.logo{
-	padding-left: 15pt;
-	padding-top: 4pt;
-}
 .see-now{
 	height: 35px;
 	width: 35px;
-}
-.footer
-{
-    /*height: 50pt;*/
 }
 
 .footer ul{
@@ -274,6 +268,11 @@ header{
 	background-color: #036;
 }
 
+.block {
+	display: inline-block;
+	border-top: 5px solid transparent;
+}
+
 .contact{
 	font-weight: 300!important;
 }
@@ -293,13 +292,14 @@ header{
 }
 
 .carouselContainer {
-	height: 434pt;
-	background-color: red
+	/*border : 1px solid red;*/
+	height : 100%;
+  	text-align: center;
 }
 .carousel {
-	
-	margin-left: 10%;
-	margin-right: 10%;
+	/*border : 1px solid green;*/
+	padding-bottom :25px;
+	display: inline-block;
 }
 .carousel-control.right {
 	right: -15%;	
@@ -316,9 +316,15 @@ header{
 	background-color: #ccc;
 	border: 1px solid #ccc;
 }
-.block {
-	margin-top: 10px;
+.textContainer {
+	/*border : 1px solid red;*/
+	height : 100%;
 }
+.textContainerInner {
+	width: 70%;
+    margin: 0 auto;
+}
+
 .activeBlock {
 	border-top:5px solid #636363;
 }
@@ -342,19 +348,9 @@ header{
 		
 	}	
 	.carousel {
-		height: 610pt;
-		width:70%;
+		/*height: 610pt;*/
 	}
-	.dashboard {
-		height: 224pt;
-		border-bottom: none;
-	}	
-	.subscriber {
-		height: 520pt;
-	}
-	.sharing {
-		height: 350pt;
-	}
+		
 	.pad_left {
 		padding-left: 5%;
 		padding-right: 5%;
@@ -363,6 +359,145 @@ header{
 		width: 40%;
 		margin-left: 30%;
 	}
+
+	/*==================*/
+
+	
+
+			
+
+			.logo{
+				padding-left: 130pt;
+			}
+
+			.video-overlay{
+				font-size: 50pt;
+				top: 65%;
+			}
+			.video-overlay div:last-child{
+				font-size: 22pt;
+				padding-top: 9pt;
+			}
+
+			.see-now{
+				height: 70px;
+				width: 70px;
+			}
+
+
+			.about-app{
+				text-align: center;
+				font-size: 28pt;
+				font-weight: 300;
+				margin-top: 260pt;
+				color: #333;
+
+			}
+
+			.about-app div:first-child{
+				padding-bottom:19pt;
+				line-height: 36pt;
+				width: 62%;
+				display: inline-block;
+			}
+			.download {
+				padding-bottom: 31pt;
+				border-bottom: none;
+			}
+
+			.sublink{
+				padding-bottom: 33pt;
+				color: #666;
+				font-size: 18pt;
+				font-weight: 300;
+			}
+
+			.dashboard{
+				padding-top: 23pt;
+			}
+
+			.dashboard .title{
+				padding-top: 15pt;
+				padding-bottom: 6pt;
+				font-size: 28pt;
+			}
+
+			.dashboard .dash-info{
+				font-size: 18pt;
+				font-weight: 300;
+				line-height: 22pt;
+				padding-bottom: 69pt;
+				border-bottom: none;
+			}
+
+			.subscriber{
+				padding-top: 43pt;
+				padding-bottom: 62pt;
+			}
+
+			.subscriber .title{
+				font-size: 28pt;
+				padding-bottom: 11pt;
+
+			}
+
+		.subscriber .info{	
+			font-size: 18pt;
+			line-height: 22pt;
+			padding-bottom: 21pt
+		}
+
+		.pad-top-54px{
+			padding-top: 50pt;
+		}
+
+		.sharing{
+			color: #666;
+			padding-top:43pt;
+		}
+
+		.sharing div:first-child{
+			font-weight: 300;
+			font-size: 18pt;
+			padding-bottom: 12pt;
+		}
+
+		.share-links  {
+			padding-bottom: 66pt;
+		}
+
+
+		.sharing span{
+			padding-right:11pt;
+		}
+
+		.sharing .appStore{
+			padding-bottom: 14pt;
+		}
+
+		.footer ul{
+			padding-top: 10pt;
+			padding-bottom::;pt;
+		}
+
+		.video-section {
+			height: 333pt;
+			background-color: black;
+		}
+		.carousel {
+			/**/
+		}
+
+		.textContainerInner {
+			border-top: 1px solid #ccc;
+		}
+			
+		.pad_left {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		/*=================*/
 	
 }
 @media (max-width: 767px) {
@@ -376,42 +511,153 @@ header{
 }	
 /***********iPad***************/
 @media (max-width: 1199px) and (min-width: 992px) { 
-	.header {
-		height: 89pt;
-	}
-	.video-section {
-		height: 333pt;
-		background-color: black;
-	}
-	.carousel {
-		height: 434pt;
-	}
-	.about-app {
-		height: 233pt;
-	}	
-	.dashboard {
-		height: 224pt;
-		border-bottom: none;
-	}	
-	.subscriber {
-		height: 520pt;
-	}
-	.sharing {
-		height: 345pt;
-	}
-	.block {
-		float: right;
-		margin-right: 15%;
-	}
+			header{
+				height: 82pt;
+			}
 
-	.activeBlock {
-		border-top: none;
-	}
-	.pad_left {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	.about-app {
-		border-bottom: none;
-	}
+			.header-bar{
+				background-color: #ed2224;
+				height: 7pt;
+			}
+
+			.logo{
+				padding-left: 26pt;
+				padding-top: 9pt;
+			}
+			.video-overlay{
+				font-size: 50pt;
+				/*font-weight: 100;
+				color: white;
+				z-index: 10;
+				position: absolute;
+				text-align: center;
+				width: 100%;
+				left: 0;*/
+				top: 40%;
+			}
+			.video-overlay div:last-child{
+				font-size: 22pt;
+				/*font-weight: 200;*/
+				padding-top: 6pt;
+				/*color:#fff;*/
+			}
+
+			.see-now{
+				height: 70px;
+				width: 70px;
+			}
+
+
+			.about-app{
+				text-align: center;
+				font-size: 28pt;
+				font-weight: 300;
+				margin-top: 95pt;
+				color: #333;
+			}
+
+			.about-app div:first-child{
+				padding-bottom:19pt;
+				line-height: 36pt;
+			}
+			.download {
+				padding-bottom: 33pt;
+				border-bottom: none;
+			}
+
+			.sublink{
+				padding-bottom: 19pt;
+				color: #666;
+				font-size: 18pt;
+				font-weight: 300;
+			}
+
+			.dashboard{
+				padding-top: 28pt;
+			}
+
+			.dashboard .title{
+				padding-top: 15pt;
+				padding-bottom: 6pt;
+				font-size: 28pt;
+			}
+
+			.dashboard .dash-info{
+				font-size: 18pt;
+				font-weight: 300;
+				line-height: 22pt;
+				padding-bottom: 67pt;
+				border-bottom: none;
+			}
+
+			.subscriber{
+				padding-top: 44pt;
+				padding-bottom: 62pt;
+			}
+
+			.subscriber .title{
+				font-size: 28pt;
+				padding-bottom: 11pt;
+
+			}
+
+		.subscriber .info{	
+			font-size: 18pt;
+			line-height: 22pt;
+			padding-bottom: 21pt
+		}
+
+		.pad-top-54px{
+			padding-top: 50pt;
+		}
+
+		.sharing{
+			color: #666;
+			padding-top:43pt;
+		}
+
+		.sharing div:first-child{
+			font-weight: 300;
+			font-size: 18pt;
+			padding-bottom: 12pt;
+		}
+
+		.share-links  {
+			padding-bottom: 66pt;
+		}
+
+
+		.sharing span{
+			padding-right:11pt;
+		}
+
+		.sharing .appStore{
+			padding-bottom: 14pt;
+		}
+
+		.footer ul{
+			padding-top: 10pt;
+			padding-bottom::;pt;
+		}
+
+		.video-section {
+			height: 333pt;
+			background-color: black;
+		}
+		.carousel {
+			border-bottom: 1px solid #ccc;
+		}
+			
+		.block {
+			float: right;
+			margin-right: 15%;
+			
+		}
+		.activeBlock {
+			border-top: none;
+		}
+		.pad_left {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
 }
