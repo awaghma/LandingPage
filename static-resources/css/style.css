@@ -3,7 +3,8 @@ html, body
 {
     height: 100%;
     overflow-x: hidden; 
-    font-family: "UniversNextMorningStarW04"
+    font-family: "UniversNextMorningStarW04";
+    -webkit-overflow-scrolling:touch;
 }
 .content
 {
@@ -89,7 +90,7 @@ video, canvas {
 	text-align: center;
 	vertical-align: middle;
 	padding-bottom: 47pt;
-	padding-top: 10pt;
+	/*padding-top: 10pt;*/
 	border-bottom: 1pt solid #ccc;
 }
 
@@ -507,7 +508,7 @@ video, canvas {
 
 	.footer ul{
 		padding-top: 10pt;
-		padding-bottom::;pt;
+		padding-bottom:50pt;
 	}
 
 	.video-section {
@@ -661,7 +662,7 @@ video, canvas {
 
 	.footer ul{
 		padding-top: 10pt;
-		padding-bottom::;pt;
+		padding-bottom:50pt;
 	}
 
 	.video-section {

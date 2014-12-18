@@ -1,6 +1,7 @@
    $( document ).ready(function() {
        console.log( "document loaded" );
-         
+        // var bgvid = document.getElementById('bg-video');
+        // bgvid.play();
         var currentEnt  = findBootstrapEnvironment();
         if(currentEnt=='md'){
            $('.carousel').carousel({ipad : true });
@@ -12,6 +13,11 @@
           $(".modal").modal('show');
           var vid = document.getElementById('modal-video');
           vid.play();
+        });
+
+        $(".close,.modal" ).on( "click",function() {
+          var vid = document.getElementById('modal-video');
+          vid.pause();
         });
 
    });
