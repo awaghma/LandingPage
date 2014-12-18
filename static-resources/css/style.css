@@ -340,9 +340,12 @@ video, canvas {
 	/*border : 1px solid red;*/
 	height : 100%;
 }
+
 .textContainerInner {
 	width: 70%;
     margin: 0 auto;
+	border-top: 1px solid #ccc;
+
 }
 
 .activeBlock {
@@ -495,10 +498,6 @@ video, canvas {
 	}
 	.carousel {
 		/**/
-	}
-
-	.textContainerInner {
-		border-top: 1px solid #ccc;
 	}
 		
 	.pad_left {
@@ -653,6 +652,9 @@ video, canvas {
 	}
 	.carousel {
 		border-bottom: 1px solid #ccc;
+	}
+	.textContainerInner {
+		border-top: none;
 	}
 		
 	.block {
