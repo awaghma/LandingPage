@@ -1,0 +1,45 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=230e9a0f-589a-439d-87f2-246f7e6c96cc");
+@font-face{
+font-family:"UniversNextMorningStarW04_n6";
+src:url("Fonts/35bb0e9e-eb8b-4946-9691-33f47ebbdd8e.eot?#iefix") format("eot")
+}
+@font-face{
+font-family:"UniversNextMorningStarW04";
+src:url("Fonts/35bb0e9e-eb8b-4946-9691-33f47ebbdd8e.eot?#iefix");
+src:url("Fonts/35bb0e9e-eb8b-4946-9691-33f47ebbdd8e.eot?#iefix") format("eot"),url("Fonts/5e0d1c67-c45b-4041-8e6d-0726738f3ca9.woff") format("woff"),url("Fonts/9b245f4a-4516-4d12-95a9-af231490bd40.ttf") format("truetype"),url("Fonts/0016251c-e4f8-4ba5-93ea-cf8a42af827b.svg#0016251c-e4f8-4ba5-93ea-cf8a42af827b") format("svg");
+font-weight: 600;
+font-style: normal;
+}
+@font-face{
+font-family:"UniversNextMorningStarW04_n2";
+src:url("Fonts/cae308d7-b35e-47d3-bf56-09f48dce04eb.eot?#iefix") format("eot")
+}
+@font-face{
+font-family:"UniversNextMorningStarW04";
+src:url("Fonts/cae308d7-b35e-47d3-bf56-09f48dce04eb.eot?#iefix");
+src:url("Fonts/cae308d7-b35e-47d3-bf56-09f48dce04eb.eot?#iefix") format("eot"),url("Fonts/c05a364a-d574-4ab8-99b6-d337ff9f0303.woff") format("woff"),url("Fonts/22ff1f20-cd3e-4c02-b058-08d424da2ff9.ttf") format("truetype"),url("Fonts/3521a4d7-ce31-44ab-8da5-daa3e4cb745e.svg#3521a4d7-ce31-44ab-8da5-daa3e4cb745e") format("svg");
+font-weight: 200;
+font-style: normal;
+}
+@font-face{
+font-family:"UniversNextMorningStarW04_n3";
+src:url("Fonts/41b86a31-91b9-42e9-b3e1-98461ea6bf28.eot?#iefix") format("eot")
+}
+@font-face{
+font-family:"UniversNextMorningStarW04";
+src:url("Fonts/41b86a31-91b9-42e9-b3e1-98461ea6bf28.eot?#iefix");
+src:url("Fonts/41b86a31-91b9-42e9-b3e1-98461ea6bf28.eot?#iefix") format("eot"),url("Fonts/1a56d8f3-9f0c-4791-8a77-d3029e770fdd.woff") format("woff"),url("Fonts/8f4973f7-8cac-449d-b756-d1379c96f3f3.ttf") format("truetype"),url("Fonts/4354be94-a151-4710-98ab-0a2cafdefc5e.svg#4354be94-a151-4710-98ab-0a2cafdefc5e") format("svg");
+font-weight: 300;
+font-style: normal;
+}
+@font-face{
+font-family:"UniversNextMorningStarW04_n1";
+src:url("Fonts/c191f7c8-8a34-4ca9-b288-e07a5987b53b.eot?#iefix") format("eot")
+}
+@font-face{
+font-family:"UniversNextMorningStarW04";
+src:url("Fonts/c191f7c8-8a34-4ca9-b288-e07a5987b53b.eot?#iefix");
+src:url("Fonts/c191f7c8-8a34-4ca9-b288-e07a5987b53b.eot?#iefix") format("eot"),url("Fonts/f2255c82-143e-4146-a968-32a1b156b6ee.woff") format("woff"),url("Fonts/700d6677-597c-4592-8bfe-8bd9a4567cff.ttf") format("truetype"),url("Fonts/b1f23826-6ef0-489b-b8c7-2b6a3e7b15b4.svg#b1f23826-6ef0-489b-b8c7-2b6a3e7b15b4") format("svg");
+font-weight: 100;
+font-style: normal;
+}

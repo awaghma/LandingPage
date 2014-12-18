@@ -1,3 +1,4 @@
+@import url("fonts.css");
 html, body
 {
     height: 100%;
@@ -22,6 +23,11 @@ header{
 .logo{
 	padding-left: 15pt;
 	padding-top: 4pt;
+}
+
+sup{
+	font-size: 7pt;
+	top: -1em!important;
 }
 
 .video-section{
@@ -63,11 +69,10 @@ video, canvas {
 }
 
 .about-app{
-
 	text-align: center;
 	font-size: 16pt;
 	font-weight: 200;
-	padding-top: 30pt;
+	padding-top: 46pt;
 }
 
 .about-app div:first-child{
@@ -84,18 +89,21 @@ video, canvas {
 	text-align: center;
 	vertical-align: middle;
 	padding-bottom: 47pt;
+	padding-top: 10pt;
 	border-bottom: 1pt solid #ccc;
 }
 
 .btn {
 	padding: 6px 6px;
 	margin-right: 4px;
+	background-color: #ed2124!important;
+	border-color: #ed2124!important;
 }
 .btn-primary {
 	color: #fff;
 	border-radius: 16pt;
 	background-color: #ed2124;
-	border-color: red;
+	border-color: #ed2124;
 	height: 32pt;
 	font-weight: 300;
 	width: 139pt;
@@ -156,8 +164,8 @@ video, canvas {
 
 .title{
 	
-	font-size: 22px;
-	font-weight: 300;
+	font-size: 22pt;
+	font-weight: 200;
 }
 
 .info{	
@@ -301,12 +309,24 @@ video, canvas {
 	padding-bottom :25px;
 	display: inline-block;
 }
+.img-arrow {
+	position: absolute;
+	top: 50%;
+	width : 36px;
+	height : 32px;
+}
+.mor-left {
+	left: 50%;
+}
+.mor-right {
+	right: 50%;
+}
 .carousel-control.right {
-	right: -15%;	
+	margin-right: -12%;	
 	background-image: none;
 }	
 .carousel-control.left {
-	left : -15%;
+	margin-left : -12%;
 	background-image: none;
 }
 .carousel-indicators .active {
@@ -335,21 +355,10 @@ video, canvas {
 		height: 470pt;
 		background-color: black;
 	}
-	
-	.about-app {
-		padding-top: 55pt;
-		height: 265pt;
-		border-bottom: none;
-		font-size: 20px;
-		font-weight: 300;
-	}
 	.sublink{
 		font-size: 16px;
 		
 	}	
-	.carousel {
-		/*height: 610pt;*/
-	}
 		
 	.pad_left {
 		padding-left: 5%;
@@ -359,146 +368,143 @@ video, canvas {
 		width: 40%;
 		margin-left: 30%;
 	}
+	.video-overlay sup:first-child{
+		font-size: 10pt;
+		top: -2em!important;
+	}
 
-	/*==================*/
+	sup{
+		font-size: 10pt;
+	}
 
-	
+	.logo{
+		padding-left: 130pt;
+	}
 
-			
+	.video-overlay{
+		font-size: 50pt;
+		top: 65%;
+	}
+	.video-overlay div:last-child{
+		font-size: 22pt;
+		padding-top: 9pt;
+	}
 
-			.logo{
-				padding-left: 130pt;
-			}
+	.see-now{
+		height: 70px;
+		width: 70px;
+	}
 
-			.video-overlay{
-				font-size: 50pt;
-				top: 65%;
-			}
-			.video-overlay div:last-child{
-				font-size: 22pt;
-				padding-top: 9pt;
-			}
+	.about-app{
+		text-align: center;
+		font-size: 28pt;
+		font-weight: 200;
+		margin-top: 25%;
+		color: #333;
+	}
 
-			.see-now{
-				height: 70px;
-				width: 70px;
-			}
+	.about-app div:first-child{
+		padding-bottom:19pt;
+		line-height: 36pt;
+		width: 70%;
+		display: inline-block;
+	}
+	.download {
+		padding-bottom: 31pt;
+		border-bottom: none;
+	}
 
+	.sublink{
+		padding-bottom: 33pt;
+		color: #666;
+		font-size: 18pt;
+		font-weight: 300;
+	}
 
-			.about-app{
-				text-align: center;
-				font-size: 28pt;
-				font-weight: 300;
-				margin-top: 260pt;
-				color: #333;
+	.dashboard{
+		padding-top: 23pt;
+	}
 
-			}
+	.dashboard .title{
+		padding-top: 15pt;
+		padding-bottom: 6pt;
+		font-size: 28pt;
+	}
 
-			.about-app div:first-child{
-				padding-bottom:19pt;
-				line-height: 36pt;
-				width: 62%;
-				display: inline-block;
-			}
-			.download {
-				padding-bottom: 31pt;
-				border-bottom: none;
-			}
+	.dashboard .dash-info{
+		font-size: 18pt;
+		font-weight: 200;
+		line-height: 22pt;
+		padding-bottom: 69pt;
+		border-bottom: none;
+	}
 
-			.sublink{
-				padding-bottom: 33pt;
-				color: #666;
-				font-size: 18pt;
-				font-weight: 300;
-			}
+	.subscriber{
+		padding-top: 43pt;
+		padding-bottom: 62pt;
+	}
 
-			.dashboard{
-				padding-top: 23pt;
-			}
+	.subscriber .title{
+		font-size: 28pt;
+		padding-bottom: 11pt;
 
-			.dashboard .title{
-				padding-top: 15pt;
-				padding-bottom: 6pt;
-				font-size: 28pt;
-			}
+	}
 
-			.dashboard .dash-info{
-				font-size: 18pt;
-				font-weight: 300;
-				line-height: 22pt;
-				padding-bottom: 69pt;
-				border-bottom: none;
-			}
+	.subscriber .info{	
+		font-size: 18pt;
+		line-height: 22pt;
+		padding-bottom: 22pt
+	}
 
-			.subscriber{
-				padding-top: 43pt;
-				padding-bottom: 62pt;
-			}
+	.pad-top-54px{
+		padding-top: 49pt;
+	}
 
-			.subscriber .title{
-				font-size: 28pt;
-				padding-bottom: 11pt;
+	.sharing{
+		color: #666;
+		padding-top:43pt;
+	}
 
-			}
+	.sharing div:first-child{
+		font-weight: 300;
+		font-size: 18pt;
+		padding-bottom: 12pt;
+	}
 
-		.subscriber .info{	
-			font-size: 18pt;
-			line-height: 22pt;
-			padding-bottom: 21pt
-		}
-
-		.pad-top-54px{
-			padding-top: 50pt;
-		}
-
-		.sharing{
-			color: #666;
-			padding-top:43pt;
-		}
-
-		.sharing div:first-child{
-			font-weight: 300;
-			font-size: 18pt;
-			padding-bottom: 12pt;
-		}
-
-		.share-links  {
-			padding-bottom: 66pt;
-		}
+	.share-links  {
+		padding-bottom: 66pt;
+	}
 
 
-		.sharing span{
-			padding-right:11pt;
-		}
+	.sharing span{
+		padding-right:11pt;
+	}
 
-		.sharing .appStore{
-			padding-bottom: 14pt;
-		}
+	.sharing .appStore{
+		padding-bottom: 14pt;
+	}
 
-		.footer ul{
-			padding-top: 10pt;
-			padding-bottom::;pt;
-		}
+	.footer ul{
+		padding-top: 10pt;
+		padding-bottom::;pt;
+	}
 
-		.video-section {
-			height: 333pt;
-			background-color: black;
-		}
-		.carousel {
-			/**/
-		}
+	.video-section {
+		height: 333pt;
+		background-color: black;
+	}
+	.carousel {
+		/**/
+	}
 
-		.textContainerInner {
-			border-top: 1px solid #ccc;
-		}
-			
-		.pad_left {
-			padding-left: 5%;
-			padding-right: 5%;
-		}
-
-		/*=================*/
-	
+	.textContainerInner {
+		border-top: 1px solid #ccc;
+	}
+		
+	.pad_left {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 }
 @media (max-width: 767px) {
 	.activeBlock {
@@ -511,153 +517,154 @@ video, canvas {
 }	
 /***********iPad***************/
 @media (max-width: 1199px) and (min-width: 992px) { 
-			header{
-				height: 82pt;
-			}
+	header{
+		height: 82pt;
+	}
 
-			.header-bar{
-				background-color: #ed2224;
-				height: 7pt;
-			}
+	.video-overlay sup:first-child{
+		font-size: 10pt;
+		top: -2em!important;
+	}
 
-			.logo{
-				padding-left: 26pt;
-				padding-top: 9pt;
-			}
-			.video-overlay{
-				font-size: 50pt;
-				/*font-weight: 100;
-				color: white;
-				z-index: 10;
-				position: absolute;
-				text-align: center;
-				width: 100%;
-				left: 0;*/
-				top: 40%;
-			}
-			.video-overlay div:last-child{
-				font-size: 22pt;
-				/*font-weight: 200;*/
-				padding-top: 6pt;
-				/*color:#fff;*/
-			}
-
-			.see-now{
-				height: 70px;
-				width: 70px;
-			}
+	sup{
+		font-size: 10pt;
+	}
 
 
-			.about-app{
-				text-align: center;
-				font-size: 28pt;
-				font-weight: 300;
-				margin-top: 95pt;
-				color: #333;
-			}
+	.header-bar{
+		background-color: #ed2224;
+		height: 7pt;
+	}
 
-			.about-app div:first-child{
-				padding-bottom:19pt;
-				line-height: 36pt;
-			}
-			.download {
-				padding-bottom: 33pt;
-				border-bottom: none;
-			}
+	.logo{
+		padding-left: 26pt;
+		padding-top: 9pt;
+	}
+	.video-overlay{
+		font-size: 50pt;
+		top: 40%;
+	}
+	.video-overlay div:last-child{
+		font-size: 22pt;
+		padding-top: 6pt;
+	}
 
-			.sublink{
-				padding-bottom: 19pt;
-				color: #666;
-				font-size: 18pt;
-				font-weight: 300;
-			}
-
-			.dashboard{
-				padding-top: 28pt;
-			}
-
-			.dashboard .title{
-				padding-top: 15pt;
-				padding-bottom: 6pt;
-				font-size: 28pt;
-			}
-
-			.dashboard .dash-info{
-				font-size: 18pt;
-				font-weight: 300;
-				line-height: 22pt;
-				padding-bottom: 67pt;
-				border-bottom: none;
-			}
-
-			.subscriber{
-				padding-top: 44pt;
-				padding-bottom: 62pt;
-			}
-
-			.subscriber .title{
-				font-size: 28pt;
-				padding-bottom: 11pt;
-
-			}
-
-		.subscriber .info{	
-			font-size: 18pt;
-			line-height: 22pt;
-			padding-bottom: 21pt
-		}
-
-		.pad-top-54px{
-			padding-top: 50pt;
-		}
-
-		.sharing{
-			color: #666;
-			padding-top:43pt;
-		}
-
-		.sharing div:first-child{
-			font-weight: 300;
-			font-size: 18pt;
-			padding-bottom: 12pt;
-		}
-
-		.share-links  {
-			padding-bottom: 66pt;
-		}
+	.see-now{
+		height: 70px;
+		width: 70px;
+	}
 
 
-		.sharing span{
-			padding-right:11pt;
-		}
+	.about-app{
+		text-align: center;
+		font-size: 28pt;
+		font-weight: 200;
+		margin-top: 95pt;
+		color: #333;
+	}
 
-		.sharing .appStore{
-			padding-bottom: 14pt;
-		}
+	.about-app div:first-child{
+		padding-bottom:19pt;
+		line-height: 36pt;
+	}
+	.download {
+		padding-bottom: 33pt;
+		border-bottom: none;
+	}
 
-		.footer ul{
-			padding-top: 10pt;
-			padding-bottom::;pt;
-		}
+	.sublink{
+		padding-bottom: 19pt;
+		color: #666;
+		font-size: 18pt;
+		font-weight: 300;
+	}
 
-		.video-section {
-			height: 333pt;
-			background-color: black;
-		}
-		.carousel {
-			border-bottom: 1px solid #ccc;
-		}
-			
-		.block {
-			float: right;
-			margin-right: 15%;
-			
-		}
-		.activeBlock {
-			border-top: none;
-		}
-		.pad_left {
-			padding-left: 5%;
-			padding-right: 5%;
-		}
+	.dashboard{
+		padding-top: 28pt;
+	}
+
+	.dashboard .title{
+		padding-top: 15pt;
+		padding-bottom: 6pt;
+		font-size: 28pt;
+	}
+
+	.dashboard .dash-info{
+		font-size: 18pt;
+		font-weight: 300;
+		line-height: 22pt;
+		padding-bottom: 67pt;
+		border-bottom: none;
+	}
+
+	.subscriber{
+		padding-top: 44pt;
+		padding-bottom: 62pt;
+	}
+
+	.subscriber .title{
+		font-size: 28pt;
+		padding-bottom: 11pt;
+
+	}
+
+	.subscriber .info{	
+		font-size: 18pt;
+		line-height: 22pt;
+		padding-bottom: 21pt
+	}
+
+	.pad-top-54px{
+		padding-top: 50pt;
+	}
+
+	.sharing{
+		color: #666;
+		padding-top:43pt;
+	}
+
+	.sharing div:first-child{
+		font-weight: 300;
+		font-size: 18pt;
+		padding-bottom: 12pt;
+	}
+
+	.share-links  {
+		padding-bottom: 66pt;
+	}
+
+
+	.sharing span{
+		padding-right:11pt;
+	}
+
+	.sharing .appStore{
+		padding-bottom: 14pt;
+	}
+
+	.footer ul{
+		padding-top: 10pt;
+		padding-bottom::;pt;
+	}
+
+	.video-section {
+		height: 333pt;
+		background-color: black;
+	}
+	.carousel {
+		border-bottom: 1px solid #ccc;
+	}
+		
+	.block {
+		float: right;
+		margin-right: 15%;
+		
+	}
+	.activeBlock {
+		border-top: none;
+	}
+	.pad_left {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 }
