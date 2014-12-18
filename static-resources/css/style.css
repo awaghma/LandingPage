@@ -238,12 +238,30 @@ video, canvas {
 	text-align: center;
 }
 
+#modal-video{
+	padding-bottom: 3%;
+	background: #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
 .sharing span{
 	padding-right:9pt;
 }
 .see-now{
 	height: 35px;
 	width: 35px;
+	cursor: pointer;
+}
+
+.modal-header .close{
+	margin-top: -10px!important;
+}
+
+.close{
+	background-color: #000;
+	z-index: 9999;
 }
 
 .footer ul{

@@ -1,12 +1,23 @@
    $( document ).ready(function() {
        console.log( "document loaded" );
+         
         var currentEnt  = findBootstrapEnvironment();
         if(currentEnt=='md'){
            $('.carousel').carousel({ipad : true });
         }else if(currentEnt=='lg'){
           $('.carousel').carousel({ipad : false });
         }
+
+        $(".see-now" ).on( "click",function() {
+          $(".modal").modal('show');
+          var vid = document.getElementById('modal-video');
+          vid.play();
+        });
+
    });
+
+
+
    function findBootstrapEnvironment() {
       var envs = ['xs', 'sm', 'md', 'lg'];
 
