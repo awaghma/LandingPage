@@ -31,13 +31,19 @@ sup{
 	top: -1em!important;
 }
 
+.bgplay{
+	visibility: hidden;
+}
+
 .video-section{
 	position :relative;
 }
+
 video {
 	height: 100%;
 	position: absolute;
 }
+
 video, canvas {
 	top: 0;
 	left: 0;
@@ -45,11 +51,35 @@ video, canvas {
 	max-width: 100%;
 	height: auto;
 }
+
+#bgvid {
+	margin-bottom: 35pt;
+}
+.item {
+	text-align: center;
+}
+.play-first {
+	display: none;
+	position: absolute;
+	top:45%;
+	left :45%;
+	z-index : 999;
+}
 .video-tag{
 	position: absolute;
 	left: 0;
 	z-index: 5;
 	width: 100%;
+}
+
+
+.video_poster{
+    width:100%;
+    height: 570px;
+    position: absolute;
+    top:0px;
+    left :0px;
+    background-image:url(../images/videostill.jpg);
 }
 .video-overlay{
 	font-size: 18pt;
@@ -67,6 +97,10 @@ video, canvas {
 	font-weight: 200;
 	padding-top: 3pt;
 	color:#fff;
+}
+
+.modal-open .modal{
+	background-color: rgba(0,0,0,0.8)!important;
 }
 
 .about-app{
@@ -257,7 +291,10 @@ video, canvas {
 }
 
 .modal-header .close{
-	margin-top: -10px!important;
+	/*margin : -10 px!important;*/
+}
+.modal-header {
+	padding: 5px 5px 40px 0px;
 }
 
 .close{
@@ -319,12 +356,10 @@ video, canvas {
 }
 
 .carouselContainer {
-	/*border : 1px solid red;*/
 	height : 100%;
   	text-align: center;
 }
 .carousel {
-	/*border : 1px solid green;*/
 	padding-bottom :25px;
 	display: inline-block;
 }
@@ -356,7 +391,6 @@ video, canvas {
 	border: 1px solid #ccc;
 }
 .textContainer {
-	/*border : 1px solid red;*/
 	height : 100%;
 }
 
@@ -421,8 +455,7 @@ video, canvas {
 		text-align: center;
 		font-size: 28pt;
 		font-weight: 200;
-		margin-top: 25%;
-		color: #333;
+		margin-top: 25%;	
 	}
 
 	.about-app div:first-child{
@@ -523,7 +556,11 @@ video, canvas {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+	.video_poster {
+	    height: 690px;
+	}
 }
+/*********** SmartPhone **********/
 @media (max-width: 767px) {
 	.activeBlock {
 		border-top: none;
@@ -532,6 +569,22 @@ video, canvas {
 		width: 80%;
 		margin-left: 10%;
 	}
+
+	.about-app {
+	 text-align: center;
+ 	 font-size: 16pt;
+ 	 font-weight: 200;
+ 	}
+
+ 	.dashboard {
+		text-align: center;
+		font-size: 16pt;
+ 		font-weight: 200;
+	 }
+	 .video_poster {
+	    height: 200px;
+	}
+
 }	
 /***********iPad***************/
 @media (max-width: 1199px) and (min-width: 992px) { 
@@ -687,5 +740,8 @@ video, canvas {
 	.pad_left {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+	.play-first {
+		display: none;
 	}
 }

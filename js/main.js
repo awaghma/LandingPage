@@ -1,14 +1,27 @@
    $( document ).ready(function() {
-       console.log( "document loaded" );
-        // var bgvid = document.getElementById('bg-video');
-        // bgvid.play();
+        var bgvid = document.getElementById('bgvid');
+        var dashvid = document.getElementById('dashvid');
+        
         var currentEnt  = findBootstrapEnvironment();
         if(currentEnt=='md'){
-           $('.carousel').carousel({ipad : true });
+           $('.carousel').carousel({ipad : true, interval :false });
         }else if(currentEnt=='lg'){
-          $('.carousel').carousel({ipad : false });
+          $('.carousel').carousel({ipad : false, interval :false });
         }
 
+        triggerModelvideo();
+
+        $("body" ).on( "touchstart",function() {
+          bgvid.play();
+        });
+
+        $(".play-first" ).on( "click",function() {
+          $(this).hide();
+          dashvid.play();
+        });
+   });
+
+   function triggerModelvideo(){
         $(".see-now" ).on( "click",function() {
           $(".modal").modal('show');
           var vid = document.getElementById('modal-video');
@@ -19,10 +32,7 @@
           var vid = document.getElementById('modal-video');
           vid.pause();
         });
-
-   });
-
-
+   }
 
    function findBootstrapEnvironment() {
       var envs = ['xs', 'sm', 'md', 'lg'];

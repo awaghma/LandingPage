@@ -25,15 +25,18 @@
    <section class="content">
      <div class="video-section">
         <canvas width="634" height="264"></canvas>
-        <video  autoplay loop>
-          <source src="static-resources/videos/video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video_poster">
+          <video id="bgvid" autoplay=true loop >
+            <source src="static-resources/videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div class="video-overlay">
             <div>Morningstar for Advisors<sup>SM</sup></div>
             <div>brings new possibilities to your practice.</div>
             <div><img src="static-resources/images/play.svg" class="see-now"></img></div>
             <div>See how</div>
+            <!-- <button class="bgplay">Play</button> -->
         </div>
       </div>
 
@@ -43,7 +46,8 @@
         <div class="col-sm-12 hidden-xs sublink ">Not a subscriber? <a href="#">Request more information</a></div>
       </div>
       <div class="col-xs-12 carouselContainer ">
-        <div id="carousel-example-generic" class="carousel slide  hidden-sm hidden-xs">
+        <div class="play-first"><img src="static-resources/images/play.svg"></img></div>
+        <div id="carousel-example-generic" class="carousel slide  hidden-sm hidden-xs interval='false'">
                <!-- Indicators -->
                <ol class="carousel-indicators">
                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -54,13 +58,29 @@
                <!-- Wrapper for slides -->
                <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                  <img src="static-resources/images/dashboard-placeholder.png"></img>
+                  <!-- <img src="static-resources/images/dashboard-placeholder.png"></img> -->
+                  <canvas width="824" height="599"></canvas>
+                  <video  preload autoplay id="dashvid" class="myvideo" poster="static-resources/images/dashboard-placeholder.png"> 
+                    <source src="static-resources/videos/web_dashboard.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                
+                <div class="item">
+                  <!-- <img src="static-resources/images/markets-placeholder.png"></img> -->
+                  <canvas width="824" height="599"></canvas>
+                  <video  preload class="myvideo" poster="static-resources/images/xray-placeholder.png">
+                    <source src="static-resources/videos/web_xray.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video >
                 </div>
                 <div class="item">
-                  <img src="static-resources/images/markets-placeholder.png"></img>
-                </div>
-                <div class="item">
-                  <img src="static-resources/images/xray-placeholder.png"></img>
+                  <!-- <img src="static-resources/images/xray-placeholder.png"></img> -->
+                  <canvas width="824" height="599"></canvas>
+                  <video preload class="myvideo" poster="static-resources/images/markets-placeholder.png">
+                    <source src="static-resources/videos/web_markets.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
             </div>
             
@@ -132,28 +152,6 @@
            </div>
       </div>
      
-     <!--  <div class="col-md-12  col-lg-12 subscriber hidden-xs hidden-sm pad_left">
-          <div class="title">Current subscribers can start today</div>
-          <div class="info">Morningstar Office subscribers can download the app and get started immediately. Our <a href="#">help guide</a> has access details for Advisor Workstation subscribers and provides more information about using the app.</div>
-          <div class="info">If you’re a Morningstar Advisor Workstation subscriber, there’s an easy way to check if your solution has access to Morningstar for Advisors.</div>
-
-          
-            <div class="col-sm-12 download left-align"><button class="btn btn-primary">Download the App</button></div>
-          
-
-          <div class="title">Not a subscriber?</div>
-
-          <div class="info">We can help advisors like you build efficient practices and move clients toward their financial goals.</div>
-
-          
-            <div class="col-sm-12 download left-align"><button class="btn btn-primary">Request More Information</button></div>
-         
-
-          <div class="title">Contact sales</div>
-
-          <div class="info">Call our sales department at +1800 000 0000 to find out which platform can help you the most.</div>
-      </div> -->
-
       <div class="col-xs-12 sharing pad_left">
           <div class="title">Share this page</div>
           <div class="share-links"><span><img src="static-resources/images/twitter-icon.svg"></span><span><img src="static-resources/images/linkedin-icon.svg"></span><span><img src="static-resources/images/facebook-icon.svg"></span><span><img src="static-resources/images/googleplus-icon.svg"></span><span><img src="static-resources/images/email-icon.svg"></span></div>
@@ -166,21 +164,19 @@
         <ul>
           <li>Terms of Use</li>
           <li>Privacy Policy</li>
-          
           <li>Contact Sales: <span class="contact">1 800 123 4567</span></li>
         </ul>
     </div>
 
    </section>
 
-   <div class="modal fade al-modal-sm al-modal-md al-modal-lg" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-md modal-lg">
+   <div class="modal fade al-modal-md al-modal-lg" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">
-            <span aria-hidden="true">×</span> <span class="sr-only">Close</span>
+            <span aria-hidden="true"><img src="static-resources/images/close-button.svg"></span> <span class="sr-only">Close</span>
           </button>
-          <!-- <h4 class="modal-title ">Video Contain </h4> -->
         </div>
         <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal">
@@ -196,7 +192,7 @@
   </div>
      <script src="lib/jquery/dist/jquery.js"></script>
      <script src="lib/bootstrap/carousel.js"></script>
-      <script src="lib/bootstrap/modal.js"></script>
+     <script src="lib/bootstrap/modal.js"></script>
      <script src="js/main.js"></script>
 
   </body>
