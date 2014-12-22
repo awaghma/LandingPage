@@ -6,6 +6,9 @@ html, body
     font-family: "UniversNextMorningStarW04";
     -webkit-overflow-scrolling:touch;
 }
+*:not(html) {
+    -webkit-transform: translate3d(0, 0, 0);
+}
 .content
 {
     min-height: 100%;
@@ -50,11 +53,9 @@ video, canvas {
 	width: 100%;
 	max-width: 100%;
 	height: auto;
-}
-
-#bgvid {
 	margin-bottom: 35pt;
 }
+
 .item {
 	text-align: center;
 }
@@ -75,7 +76,6 @@ video, canvas {
 
 .video_poster{
     width:100%;
-    height: 570px;
     position: absolute;
     top:0px;
     left :0px;
@@ -85,22 +85,19 @@ video, canvas {
 	font-size: 18pt;
 	font-weight: 100;
 	color: white;
-	z-index: 10;
+	z-index: 999;
 	position: absolute;
 	text-align: center;
 	width: 100%;
 	left: 0;
 	top: 5%;
+	-webkit-transform: translate3d(0,0,0);
 }
 .video-overlay div:last-child{
 	font-size: 12pt;
 	font-weight: 200;
 	padding-top: 3pt;
 	color:#fff;
-}
-
-.modal-open .modal{
-	background-color: rgba(0,0,0,0.8)!important;
 }
 
 .about-app{
@@ -273,14 +270,6 @@ video, canvas {
 	text-align: center;
 }
 
-#modal-video{
-	padding-bottom: 3%;
-	background: #e5e5e5;
-	border-bottom: 1px solid #e5e5e5;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
-}
-
 .sharing span{
 	padding-right:9pt;
 }
@@ -290,16 +279,37 @@ video, canvas {
 	cursor: pointer;
 }
 
-.modal-header .close{
-	/*margin : -10 px!important;*/
-}
 .modal-header {
 	padding: 5px 5px 40px 0px;
+	border: none;
+}
+
+.modal-header .close{
+	margin-top: 55pt;
+	margin-right: -25pt;
+}
+
+.modal-content{
+	background: rgba(0,0,0,0)!important;
+	border: none;
+	box-shadow: none;
+}
+
+.modal-body{
+	padding:0!important;
+}
+
+#modal-video{
+	padding-top: 50pt;
+}
+
+.modal-open .modal{
+	background-color: rgba(0,0,0,0.8)!important;
 }
 
 .close{
-	background-color: #000;
 	z-index: 9999;
+	opacity: 1;
 }
 
 .footer ul{
@@ -383,12 +393,15 @@ video, canvas {
 	margin-left : -12%;
 	background-image: none;
 }
+
 .carousel-indicators .active {
 	background-color: #000;
+	margin-right: 10px;
 }	
 .carousel-indicators li {
 	background-color: #ccc;
 	border: 1px solid #ccc;
+	margin-right: 10px;
 }
 .textContainer {
 	height : 100%;
@@ -405,7 +418,7 @@ video, canvas {
 	border-top:5px solid #636363;
 }
 
-
+/*************Desktop**************/
 @media (min-width: 992px) {
 	.video-section {
 		height: 470pt;
@@ -449,13 +462,14 @@ video, canvas {
 	.see-now{
 		height: 70px;
 		width: 70px;
+		cursor: pointer;
 	}
 
 	.about-app{
 		text-align: center;
 		font-size: 28pt;
 		font-weight: 200;
-		margin-top: 25%;	
+		margin-top: 22%;	
 	}
 
 	.about-app div:first-child{
@@ -546,7 +560,6 @@ video, canvas {
 
 	.video-section {
 		height: 333pt;
-		background-color: black;
 	}
 	.carousel {
 		/**/
@@ -574,6 +587,7 @@ video, canvas {
 	 text-align: center;
  	 font-size: 16pt;
  	 font-weight: 200;
+ 	 padding-top: 30pt;
  	}
 
  	.dashboard {
@@ -581,13 +595,29 @@ video, canvas {
 		font-size: 16pt;
  		font-weight: 200;
 	 }
+	 .video-overlay{
+	 	padding-top: 10%;
+	 }
 	 .video_poster {
-	    height: 200px;
-	}
+	    height: 220px;
+	 }
+
+	.modal-header .close{
+		margin-top: 50pt;
+		margin-right: -10pt;
+		z-index: 999;
+	}	
+
+	
 
 }	
 /***********iPad***************/
-@media (max-width: 1199px) and (min-width: 992px) { 
+/*@media (max-width: 1199px) and (min-width: 992px) { */
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+
+
 	header{
 		height: 82pt;
 	}
@@ -720,7 +750,7 @@ video, canvas {
 
 	.video-section {
 		height: 333pt;
-		background-color: black;
+		background-color: white;
 	}
 	.carousel {
 		border-bottom: 1px solid #ccc;
@@ -739,9 +769,49 @@ video, canvas {
 	}
 	.pad_left {
 		padding-left: 5%;
-		padding-right: 5%;
+		padding-right: 5%;1
 	}
 	.play-first {
 		display: none;
 	}
+
+	.video_poster {
+	    height: 570px;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.carousel-control.right{
+		margin-right :-11%;
+	}
+
+	.carousel-control.left{
+		margin-left :-11%;
+	}	
+
+	.about-app{
+		padding-top: 0;
+		margin-top: 35pt;
+	}
+
+	.video-overlay{
+		top: 2pt;
+	}
+
+	.video_poster{
+		height: 433px;
+	}
+
+	.mycanvas{
+		width: 700px;
+		height:500px;
+	}
+
+	#bgvid{
+		margin-bottom: 35pt;
+	}
+
+
+
 }

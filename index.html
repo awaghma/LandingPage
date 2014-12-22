@@ -26,8 +26,8 @@
      <div class="video-section">
         <canvas width="634" height="264"></canvas>
         <div class="video_poster">
-          <video id="bgvid" autoplay=true loop >
-            <source src="static-resources/videos/video.mp4" type="video/mp4">
+          <video id="bgvid" autoplay=true loop class="hidden-xs">
+            <source src="http://video.morningstar.com/us/misc/advisorapp/advisor_open_3mbps.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -36,7 +36,6 @@
             <div>brings new possibilities to your practice.</div>
             <div><img src="static-resources/images/play.svg" class="see-now"></img></div>
             <div>See how</div>
-            <!-- <button class="bgplay">Play</button> -->
         </div>
       </div>
 
@@ -47,7 +46,7 @@
       </div>
       <div class="col-xs-12 carouselContainer ">
         <div class="play-first"><img src="static-resources/images/play.svg"></img></div>
-        <div id="carousel-example-generic" class="carousel slide  hidden-sm hidden-xs interval='false'">
+        <div id="carousel-example-generic" class="carousel slide hidden-xs interval='false'">
                <!-- Indicators -->
                <ol class="carousel-indicators">
                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -59,26 +58,26 @@
                <div class="carousel-inner" role="listbox">
                 <div class="item active">
                   <!-- <img src="static-resources/images/dashboard-placeholder.png"></img> -->
-                  <canvas width="824" height="599"></canvas>
+                  <canvas width="824" height="599" class="mycanvas"></canvas>
                   <video  preload autoplay id="dashvid" class="myvideo" poster="static-resources/images/dashboard-placeholder.png"> 
-                    <source src="static-resources/videos/web_dashboard.mp4" type="video/mp4">
+                    <source src="http://video.morningstar.com/us/misc/advisorapp/141218_advisor_web_dashboard.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 
                 <div class="item">
                   <!-- <img src="static-resources/images/markets-placeholder.png"></img> -->
-                  <canvas width="824" height="599"></canvas>
+                  <canvas width="824" height="599" class="mycanvas"></canvas>
                   <video  preload class="myvideo" poster="static-resources/images/xray-placeholder.png">
-                    <source src="static-resources/videos/web_xray.mp4" type="video/mp4">
+                    <source src="http://video.morningstar.com/us/misc/advisorapp/141218_advisor_web_xray.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video >
                 </div>
                 <div class="item">
                   <!-- <img src="static-resources/images/xray-placeholder.png"></img> -->
-                  <canvas width="824" height="599"></canvas>
+                  <canvas width="824" height="599" class="mycanvas" ></canvas>
                   <video preload class="myvideo" poster="static-resources/images/markets-placeholder.png">
-                    <source src="static-resources/videos/web_markets.mp4" type="video/mp4">
+                    <source src="http://video.morningstar.com/us/misc/advisorapp/141218_advisor_web_markets.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -95,7 +94,7 @@
                </a>
         </div>
     </div>
-      <div class="pad_left hidden-md hidden-lg" >
+      <div class="pad_left hidden-md hidden-lg hidden-sm" >
         <div class="col-xs-12 col-sm-11 col-md-9 col-lg-4   dashboard">
            <div class="image"><img src="static-resources/images/client-dashboard.svg"></img></div>
           <div class="title">Client Dashboard</div>
@@ -113,19 +112,19 @@
         </div>
       </div>
     <!-- For Crousal things we create two different div element-->
-     <div class="col-xs-12 textContainer hidden-sm hidden-xs" >
+     <div class="col-xs-12 textContainer hidden-xs" >
         <div class="textContainerInner">
-        <div class="col-xs-12 col-sm-11 col-md-9 col-lg-4  js-block block activeBlock staticBlock dashboard">
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-4  js-block block activeBlock staticBlock dashboard">
            <div class="image"><img src="static-resources/images/client-dashboard.svg"></img></div>
           <div class="title">Client Dashboard</div>
           <div class="dash-info">Performance data and Morningstar reports give you a complete view of every client portfolio.</div>
         </div>
-        <div class="col-xs-12 col-sm-11 col-md-9 col-lg-4 hidden-md js-block block dashboard">
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-4 hidden-md js-block block dashboard hidden-sm">
           <div class="image"><img src="static-resources/images/portfolio-xray.svg"></img></div>
           <div class="title">Portfolio X-Ray</div>
           <div class="dash-info">Interactive charts and graphics help you explain recommendations and show clients how they’re doing.</div>
         </div>
-        <div class="col-xs-12 col-sm-11 col-md-9 col-lg-4 hidden-md js-block block dashboard">
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-4 hidden-md js-block block dashboard hidden-sm">
           <div class="image"><img src="static-resources/images/markets.svg"></img></div>
           <div class="title">Markets Page</div>
           <div class="dash-info">Updates from our analysts and the latest data keep you up to speed on the day’s news and events.</div>
@@ -169,8 +168,7 @@
     </div>
 
    </section>
-
-   <div class="modal fade al-modal-md al-modal-lg" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-md modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -179,10 +177,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal">
-              <span aria-hidden="true">×</span> <span class="sr-only">Close</span>
-          </button>
-        <video id="modal-video">
+        <video id="modal-video" controls>
                 <source src="static-resources/videos/mov_bbb.mp4" type="video/mp4" replay>
                   Your browser does not support the video tag.
             </video>

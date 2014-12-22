@@ -1,9 +1,13 @@
    $( document ).ready(function() {
         var bgvid = document.getElementById('bgvid');
         var dashvid = document.getElementById('dashvid');
+
+        setTimeout(function(){
+          dashvid.play();
+        }, 3000)
         
         var currentEnt  = findBootstrapEnvironment();
-        if(currentEnt=='md'){
+        if(currentEnt=='md' || currentEnt=='sm'){
            $('.carousel').carousel({ipad : true, interval :false });
         }else if(currentEnt=='lg'){
           $('.carousel').carousel({ipad : false, interval :false });
@@ -12,12 +16,9 @@
         triggerModelvideo();
 
         $("body" ).on( "touchstart",function() {
-          bgvid.play();
-        });
-
-        $(".play-first" ).on( "click",function() {
-          $(this).hide();
-          dashvid.play();
+          if(currentEnt=='md' || currentEnt=='sm'){
+            bgvid.play();
+          }
         });
    });
 
