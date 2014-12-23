@@ -29,9 +29,9 @@ header{
 	padding-top: 4pt;
 }
 
-sup{	
+sup{
 	font-size: 7pt;
-	top: -1.5em !important;
+	top: -1em!important;
 }
 
 .bgplay{
@@ -47,13 +47,13 @@ video {
 	position: absolute;
 }
 
-video, canvas {	
+video, canvas {
 	top: 0;
 	left: 0;
 	width: 100%;
 	max-width: 100%;
 	height: auto;
-	margin-bottom: 17pt;
+	margin-bottom: 35pt;
 }
 
 .item {
@@ -81,13 +81,12 @@ video, canvas {
     left :0px;
     background-image:url(../images/videostill.jpg);
 }
-.video-overlay{	
+.video-overlay{
 	font-size: 18pt;
 	font-weight: 100;
 	color: white;
 	z-index: 999;
 	position: absolute;
-	line-height: 60pt;
 	text-align: center;
 	width: 100%;
 	left: 0;
@@ -108,7 +107,7 @@ video, canvas {
 	padding-top: 46pt;
 }
 
-.about-info{
+.about-app div:first-child{
 	
 	padding-bottom:21pt;
 	line-height: 21pt;
@@ -126,29 +125,22 @@ video, canvas {
 	border-bottom: 1pt solid #ccc;
 }
 
-.btn {	
+.btn {
 	padding: 6px 6px;
 	margin-right: 4px;
-	/* background-color: #ed2124!important; */
+	background-color: #ed2124!important;
 	border-color: #ed2124!important;
 }
-.btn-primary {	
-	color: #ed2124;
+.btn-primary {
+	color: #fff;
 	border-radius: 16pt;
-	background-color: transparent !important;
+	background-color: #ed2124;
 	border-color: #ed2124;
 	height: 32pt;
 	font-weight: 300;
 	width: 139pt;
 	font-size: 16pt;
 }
-
-.btn-primary:hover{
-	color: #fff!important;
-	background-color: #ed2124!important;
-	border-color: #ed2124!important;
-}
-
 
 .w182pt{
 	width: 182pt!important;
@@ -183,11 +175,11 @@ video, canvas {
 	color: #151515;
 }
 
-.dashboard .title{	
+.dashboard .title{
 	padding-top: 18pt;
 	padding-bottom: 6pt;
 	font-size: 21pt;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 .dashboard .dash-info{
@@ -216,19 +208,17 @@ video, canvas {
 
 .subscriber{
 	padding-top: 36pt;
-	/*background-color: #ccc;*/
+	background-color: #ccc;
 	color: #666;
 	padding-bottom: 57pt;
-	background-image: url("../images/texture.svg");
-	background-repeat: repeat;
 }
 
-.subscriber .title{	
-	font-weight: 200;
+.subscriber .title{
+	font-weight: 300;
 	font-size: 20pt;
-	padding-bottom: 5pt;
+	padding-bottom: 14pt;
 	clear:both;
-	
+
 }
 
 .subscriber .info{	
@@ -238,8 +228,8 @@ video, canvas {
 	padding-bottom: 16pt
 }
 
-.pad-top-54px{	
-	/* padding-top: 54pt; */
+.pad-top-54px{
+	padding-top: 54pt;
 }
 
 .seprator{
@@ -347,7 +337,9 @@ video, canvas {
 .footer ul li a
 {
 	text-decoration: none;
-	color: #151515;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #036;
 }
 
 .block {
@@ -407,8 +399,8 @@ video, canvas {
 	margin-right: 10px;
 }	
 .carousel-indicators li {
-	background-color: #888888;
-	border: 1px solid #888888;
+	background-color: #ccc;
+	border: 1px solid #ccc;
 	margin-right: 10px;
 }
 .textContainer {
@@ -423,25 +415,7 @@ video, canvas {
 }
 
 .activeBlock {
-	border-top:5px solid #151515;
-}
-
-.underline {
-	border-bottom: 1px solid #ef3e42;
-}
-
-/* Set a style for all of the links */
-a, a:link, a:visited, a:hover, a:active {
-	color: #666;
-	text-decoration: underline;
-}
-
-.playbutton {
-	padding-top: 25pt;
-}
-
-a.left.carousel-control, a.right.carousel-control {
-	top: -110px;
+	border-top:5px solid #636363;
 }
 
 /*************Desktop**************/
@@ -465,7 +439,7 @@ a.left.carousel-control, a.right.carousel-control {
 	}
 	.video-overlay sup:first-child{
 		font-size: 10pt;
-		top: -2.5em !important;
+		top: -2em!important;
 	}
 
 	sup{
@@ -480,9 +454,9 @@ a.left.carousel-control, a.right.carousel-control {
 		font-size: 50pt;
 		top: 65%;
 	}
-	.video-overlay div:last-child{		
+	.video-overlay div:last-child{
 		font-size: 22pt;
-		line-height: 120%
+		padding-top: 9pt;
 	}
 
 	.see-now{
@@ -498,7 +472,7 @@ a.left.carousel-control, a.right.carousel-control {
 		margin-top: 22%;	
 	}
 
-	.about-info{
+	.about-app div:first-child{
 		padding-bottom:19pt;
 		line-height: 36pt;
 		width: 70%;
@@ -526,7 +500,7 @@ a.left.carousel-control, a.right.carousel-control {
 		font-size: 28pt;
 	}
 
-	.dashboard .dash-info{		
+	.dashboard .dash-info{
 		font-size: 18pt;
 		font-weight: 200;
 		line-height: 22pt;
@@ -539,20 +513,20 @@ a.left.carousel-control, a.right.carousel-control {
 		padding-bottom: 62pt;
 	}
 
-	.subscriber .title{		
+	.subscriber .title{
 		font-size: 28pt;
-		padding-bottom: 5pt;
-		
+		padding-bottom: 11pt;
+
 	}
 
 	.subscriber .info{	
 		font-size: 18pt;
 		line-height: 22pt;
-		padding-bottom: 22pt;
+		padding-bottom: 22pt
 	}
 
-	.pad-top-54px{		
-		padding-top: 10pt;
+	.pad-top-54px{
+		padding-top: 49pt;
 	}
 
 	.sharing{
@@ -579,8 +553,8 @@ a.left.carousel-control, a.right.carousel-control {
 		padding-bottom: 14pt;
 	}
 
-	.footer ul{		
-		padding-top: 0pt;
+	.footer ul{
+		padding-top: 10pt;
 		padding-bottom:50pt;
 	}
 
@@ -622,15 +596,10 @@ a.left.carousel-control, a.right.carousel-control {
  		font-weight: 200;
 	 }
 	 .video-overlay{
-	 	padding-top: 5%;
-	 	line-height: 23pt;
+	 	padding-top: 10%;
 	 }
 	 .video_poster {
 	    height: 220px;
-	 }
-	 
-	 .video-section{
-		height:220px;
 	 }
 
 	.modal-header .close{
@@ -638,10 +607,6 @@ a.left.carousel-control, a.right.carousel-control {
 		margin-right: -10pt;
 		z-index: 999;
 	}	
-	
-	.playbutton {
-		padding-top: 20pt;
-	}
 
 	
 
@@ -677,31 +642,31 @@ a.left.carousel-control, a.right.carousel-control {
 		padding-top: 9pt;
 	}
 	.video-overlay{
-		font-size: 38pt;
+		font-size: 50pt;
 		top: 40%;
 	}
 	.video-overlay div:last-child{
-		font-size: 18pt;
-		padding-top: 3pt;
+		font-size: 22pt;
+		padding-top: 6pt;
 	}
 
 	.see-now{
-		height: 56px;
-		width: 56px;
+		height: 70px;
+		width: 70px;
 	}
 
 
 	.about-app{
 		text-align: center;
-		font-size: 22pt;
+		font-size: 28pt;
 		font-weight: 200;
 		margin-top: 95pt;
 		color: #333;
 	}
 
-	.about-info{
+	.about-app div:first-child{
 		padding-bottom:19pt;
-		line-height: 28pt;
+		line-height: 36pt;
 	}
 	.download {
 		padding-bottom: 33pt;
@@ -723,7 +688,6 @@ a.left.carousel-control, a.right.carousel-control {
 		padding-top: 15pt;
 		padding-bottom: 6pt;
 		font-size: 28pt;
-		font-weight: 200;
 	}
 
 	.dashboard .dash-info{
@@ -741,7 +705,7 @@ a.left.carousel-control, a.right.carousel-control {
 
 	.subscriber .title{
 		font-size: 28pt;
-		padding-bottom: 5pt;
+		padding-bottom: 11pt;
 
 	}
 
@@ -752,7 +716,7 @@ a.left.carousel-control, a.right.carousel-control {
 	}
 
 	.pad-top-54px{
-		padding-top: 10pt;
+		padding-top: 50pt;
 	}
 
 	.sharing{
@@ -832,7 +796,7 @@ a.left.carousel-control, a.right.carousel-control {
 	}
 
 	.video-overlay{
-		top: 20%;
+		top: 2pt;
 	}
 
 	.video_poster{
@@ -851,4 +815,3 @@ a.left.carousel-control, a.right.carousel-control {
 
 
 }
-
