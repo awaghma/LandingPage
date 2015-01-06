@@ -9,8 +9,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-    
-
+    <!--[if IE 9]>
+    <style type="text/css">
+         .ie9carousel-inner {
+            width : 760px !important;
+            height : 599px;
+         }
+      </style>
+    <![endif]-->
+    <!--[if gte IE 9 | !IE ]><!-->
+        <style type="text/css">
+           .ie9carousel-inner {
+              width : 760px !important;
+              height : 599px;
+           }
+        </style>
+    <![endif]-->
     <title>Advisor</title>
 
     <!-- Bootstrap core CSS -->
@@ -58,7 +72,7 @@
                </ol>
             
                <!-- Wrapper for slides -->
-               <div class="carousel-inner" role="listbox">
+               <div class="carousel-inner ie9carousel-inner" role="listbox">
                 <div class="item active">
                   <!-- <img src="static-resources/images/dashboard-placeholder.png"></img> -->
                   <canvas width="824" height="599" class="mycanvas"></canvas>

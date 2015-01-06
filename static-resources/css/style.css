@@ -368,7 +368,6 @@ video, canvas {
   z-index: 5;
   display: inline-block;
 }
-
 .left-align{
 	text-align: left!important;
 }
@@ -443,7 +442,10 @@ a, a:link, a:visited, a:hover, a:active {
 a.left.carousel-control, a.right.carousel-control {
 	top: -110px;
 }
-
+.carousel-control.left, .carousel-control.right{ 
+	background: none !important; 
+	filter: progid:none !important; 
+}
 /*************Desktop**************/
 @media (min-width: 992px) {
 	.video-section {
